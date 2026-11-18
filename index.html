@@ -1,0 +1,1125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Teja Weds Akhila | Wedding Invitation ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #d81b60;
+  --dark: #ad1457;
+  --light: #fff0f5;
+  --gold: #bd8b35;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #49333c;
+  text-align: center;
+  background: linear-gradient(135deg,#fff8f0,#fce4ec,#f8bbd0);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+h1,h2,h3 {
+  color: var(--pink);
+}
+
+h1 {
+  font-size: clamp(1.5rem,5vw,2.2rem);
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.telugu {
+  font-family: 'Noto Serif Telugu',serif;
+  line-height: 2;
+}
+
+.heart {
+  font-size: 2.5rem;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.18); }
+}
+
+.subtitle {
+  color: var(--dark);
+  font-size: .9rem;
+}
+
+.divider {
+  color: var(--pink);
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.card {
+  background: rgba(255,255,255,.95);
+  border-radius: 18px;
+  padding: 18px 15px;
+  margin: 14px 0;
+  box-shadow: 0 5px 18px rgba(150,50,90,.12);
+  border: 1px solid rgba(248,187,208,.7);
+}
+
+.card h3 {
+  margin: 5px 0 12px;
+  font-size: 1.05rem;
+}
+
+.detail {
+  font-size: .9rem;
+  line-height: 1.9;
+  margin: 10px 0;
+}
+
+.detail strong {
+  color: var(--dark);
+}
+
+.couple {
+  color: #c2185b;
+  font-size: clamp(1.55rem,5vw,2.2rem);
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.couple .and {
+  display: block;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.parents {
+  color: #7b1fa2;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.venue {
+  background: #fff0f5;
+  border-radius: 13px;
+  padding: 13px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 11px 18px;
+  margin: 5px;
+  background: linear-gradient(90deg,#f06292,#d81b60);
+  color: white;
+  font-family: inherit;
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(233,30,99,.2);
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CONTINUOUS THREE SECTIONS */
+
+.page {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+
+.page + .page {
+  border-top: 2px dashed #e8a3bd;
+  padding-top: 25px;
+}
+
+.page-label {
+  color: var(--gold);
+  font-size: .75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+/* COUNTDOWN */
+
+.countdown-box {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.event {
+  background: white;
+  border-radius: 14px;
+  padding: 12px 7px;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.event h3 {
+  font-size: .95rem;
+  margin: 4px;
+}
+
+.event p {
+  font-size: .78rem;
+  margin: 5px;
+}
+
+.timer {
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.8;
+}
+
+/* SLIDESHOW */
+
+.slideshow {
+  max-width: 600px;
+  margin: 18px auto;
+  overflow: hidden;
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(0,0,0,.15);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: clamp(190px,48vw,330px);
+  object-fit: cover;
+}
+
+.slide.active {
+  display: block;
+  animation: appear .7s;
+}
+
+@keyframes appear {
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.caption {
+  color: var(--dark);
+  padding: 8px;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.dots {
+  padding-bottom: 9px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f3b2c7;
+  margin: 3px;
+}
+
+.dot.active {
+  background: var(--pink);
+}
+
+/* PETALS */
+
+.petal {
+  position: fixed;
+  top: -25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 22px;
+  z-index: 2;
+  pointer-events: none;
+  animation: floatUp 7s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) scale(1.4);
+    opacity: 0;
+  }
+}
+
+.footer {
+  padding: 15px 5px;
+  color: var(--dark);
+  font-size: .8rem;
+}
+
+/* MOBILE */
+
+@media(max-width:480px) {
+  body {
+    padding: 6px;
+  }
+
+  .card {
+    padding: 14px 11px;
+    margin: 10px 0;
+  }
+
+  .detail {
+    font-size: .82rem;
+  }
+
+  .telugu {
+    font-size: .88rem;
+  }
+
+  button {
+    font-size: .8rem;
+    padding: 10px 15px;
+  }
+}
+
+/* PRINT - THREE A4 PAGES */
+
+@media print {
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .page {
+    display: block !important;
+    height: 277mm;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    page-break-after: always;
+    break-after: page;
+    animation: none;
+  }
+
+  .page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #e8b4c6;
+    margin: 9px 0;
+  }
+
+  .petal,
+  .floating-heart,
+  .slideshow,
+  .action-buttons {
+    display: none !important;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  .heart {
+    animation: none;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================================= -->
+<!-- SECTION 1: WELCOME & COUPLE -->
+<!-- ================================= -->
+
+<section class="page" id="page1">
+
+<div class="page-label">WITH DIVINE BLESSINGS</div>
+
+<h1>💍 Wedding Invitation 💖</h1>
+
+<p class="subtitle">
+Two Hearts · One Beautiful Journey · Forever Together
+</p>
+
+<div class="heart">❤️</div>
+
+<div class="card">
+
+<h2>We Cordially Invite You</h2>
+
+<p>
+With the divine blessings of the Almighty
+and our beloved parents, we warmly invite
+you and your family to celebrate the
+beautiful union of our beloved son.
+</p>
+
+<div class="telugu">
+<p>
+దైవానుగ్రహంతో మరియు పెద్దల ఆశీర్వాదాలతో
+మా ఇంట జరిగే శుభకార్యానికి
+మీ కుటుంబ సమేతంగా విచ్చేసి
+వధూవరులను ఆశీర్వదించవలసిందిగా
+మనస్ఫూర్తిగా ఆహ్వానిస్తున్నాము.
+</p>
+</div>
+
+<div class="divider">❀ ❀ ❀</div>
+
+<div class="couple">
+Sai Teja Mudhiraj
+<span class="and">❤️ WEDS ❤️</span>
+Akhila
+</div>
+
+<p class="detail">
+<strong>Daughter of / కుమార్తె</strong><br>
+Smt. & Sri. Pula Rameshwari -
+Sudhakar Mudhiraj
+</p>
+
+<div class="divider">🌸 ✨ 🌸</div>
+
+<p class="parents">
+With the blessings of<br>
+Mathrusri Goolla Anasuya<br>
+Late Sathaiah Mudhiraj
+</p>
+
+<div class="telugu">
+<p>శ్రీరస్తు శుభమస్తు కళ్యాణమస్తు</p>
+</div>
+
+</div>
+
+<!-- COUNTDOWN -->
+
+<h2>Countdown to Our Special Days</h2>
+
+<div class="countdown-box">
+
+<div class="event">
+<h3>💍 Wedding</h3>
+<p>26 November 2026</p>
+<div class="timer" id="wedding-countdown">
+Loading...
+</div>
+</div>
+
+<div class="event">
+<h3>🎉 Reception</h3>
+<p>29 November 2026</p>
+<div class="timer" id="reception-countdown">
+Loading...
+</div>
+</div>
+
+</div>
+
+<!-- SLIDESHOW -->
+
+<div class="slideshow">
+
+<img class="slide active"
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Ganesha.jpg"
+alt="Lord Ganesha">
+
+<img class="slide"
+src="https://img.pikbest.com/origin/09/08/38/03apIkbEsTfVm.png!w700wp"
+alt="Wedding couple">
+
+<img class="slide"
+src="https://www.tourmyindia.com/blog//wp-content/uploads/2019/12/Indian-Wedding-Rituals-indian-couple.jpg"
+alt="Traditional Indian wedding">
+
+<img class="slide"
+src="https://thumbs.dreamstime.com/b/indian-bengali-wedding-illustration-bride-dressed-sari-traditional-ornaments-groom-dressed-dhoti-79406918.jpg"
+alt="Indian bride and groom">
+
+<div class="caption" id="slideCaption">
+Lord Ganesha's Blessings
+</div>
+
+<div class="dots" id="slideDots"></div>
+
+</div>
+
+<p class="telugu">
+మీ రాకతో మా ఆనందాన్ని రెట్టింపు చేయండి ❤️
+</p>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- SECTION 2: WEDDING CEREMONY -->
+<!-- ================================= -->
+
+<section class="page" id="page2">
+
+<div class="page-label">THE WEDDING CELEBRATION</div>
+
+<h1>💍 Wedding Ceremony</h1>
+
+<p class="subtitle">
+The Auspicious Wedding Celebration
+</p>
+
+<div class="card">
+
+<div class="heart">💖</div>
+
+<h2>Sai Teja Mudhiraj & Akhila</h2>
+
+<div class="divider">❀ ❀ ❀</div>
+
+<h3>Wedding Muhurtham / వివాహ ముహూర్తం</h3>
+
+<p class="detail">
+<strong>Day / రోజు:</strong>
+Thursday / గురువారం<br>
+
+<strong>Date / తేదీ:</strong>
+26 November 2026 / 26-11-2026<br>
+
+<strong>Time / సమయం:</strong>
+09:15 AM / ఉదయం 09:15 గంటలకు<br>
+
+<strong>Nakshatra / నక్షత్రం:</strong>
+Mrugashira / మృగశిర నక్షత్రం<br>
+
+<strong>Lagnam / లగ్నం:</strong>
+Dhanur Lagnam / ధనుర్ లగ్నం
+</p>
+
+<div class="telugu">
+<p>
+తేది: 26-11-2026, గురువారం<br>
+సమయం: ఉదయం 09:15 గంటలకు<br>
+మృగశిర నక్షత్రం - ధనుర్ లగ్నం.
+</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="divider">📍</div>
+
+<h2>Wedding Venue</h2>
+
+<h3>Premasri Convention</h3>
+
+<p class="detail">
+<strong>Location / చిరునామా:</strong><br>
+Thukkuguda,<br>
+Hyderabad, Telangana.
+</p>
+
+<div class="telugu">
+<p>
+ప్రేమశ్రీ కన్వెన్షన్<br>
+తుక్కుగూడ,<br>
+హైదరాబాద్.
+</p>
+</div>
+
+<a href="https://www.google.com/maps/search/?api=1&query=Premasri+Convention+Thukkuguda+Hyderabad"
+target="_blank" rel="noopener noreferrer">
+<button>📍 Get Wedding Directions</button>
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Invitation from the Family</h3>
+
+<p>
+We request your gracious presence
+and blessings on this beautiful occasion.
+</p>
+
+<div class="telugu">
+<p>
+ఈ శుభకార్యానికి విచ్చేసి
+వధూవరులను ఆశీర్వదించవలసిందిగా
+మనస్ఫూర్తిగా కోరుకుంటున్నాము.
+</p>
+</div>
+
+</div>
+
+<div class="divider">🌺 ❤️ 🌺</div>
+
+</section>
+
+
+<!-- ================================= -->
+<!-- SECTION 3: RECEPTION & FAMILY -->
+<!-- ================================= -->
+
+<section class="page" id="page3">
+
+<div class="page-label">RECEPTION & FAMILY CELEBRATION</div>
+
+<h1>🎉 Reception Celebration</h1>
+
+<p class="subtitle">
+Join Us for the Reception & Blessings
+</p>
+
+<div class="card">
+
+<h2>Reception Details / విందు వివరాలు</h2>
+
+<p class="detail">
+<strong>Day / రోజు:</strong>
+Sunday / ఆదివారం<br>
+
+<strong>Date / తేదీ:</strong>
+29 November 2026 / 29-11-2026<br>
+
+<strong>Time / సమయం:</strong>
+06:00 PM onwards / సాయంత్రం 06:00 గంటల నుండి
+</p>
+
+<div class="telugu">
+<p>
+తేది: 29-11-2026, ఆదివారం<br>
+సమయం: సాయంత్రం 06:00 గంటల నుండి
+</p>
+</div>
+
+<div class="divider">📍</div>
+
+<h3>Reception Venue / విందు వేదిక</h3>
+
+<p class="detail">
+<strong>Our Residence / మా స్వగృహము</strong><br>
+Village Dharmaram, 'X' Road,<br>
+Kannala, Mandal Palakurthi,<br>
+District Peddapalli,<br>
+Telangana.
+</p>
+
+<div class="telugu">
+<p>
+మా స్వగృహము నందు.<br>
+గ్రామం: ధర్మారం 'X' రోడ్, కన్నాల,<br>
+మండలం: పాలకుర్తి,<br>
+జిల్లా: పెద్దపల్లి.
+</p>
+</div>
+
+<a href="https://www.google.com/maps/dir/?api=1&destination=18.685447831637337%2C79.41040372856125"
+target="_blank" rel="noopener noreferrer">
+<button>🗺️ Get Reception Directions</button>
+</a>
+
+</div>
+
+
+<!-- FAMILY DETAILS -->
+
+<div class="card">
+
+<h2>Family & Blessings</h2>
+
+<h3>With the Blessings Of</h3>
+
+<p class="parents">
+Mathrusri Goolla Anasuya<br>
+Late Sathaiah Mudhiraj
+</p>
+
+<div class="divider">🌺 🌺 🌺</div>
+
+<h3>Invited By / ఆహ్వానించువారు</h3>
+
+<p class="detail">
+<strong>
+Smt. & Sri. Goolla Shankaramma -
+Bheemiah Mudhiraj
+</strong>
+</p>
+
+<div class="telugu">
+<p class="parents">
+శ్రీమతి & శ్రీ గూల్ల శంకరమ్మ -
+భీమయ్య ముదిరాజ్
+</p>
+</div>
+
+<p>
+With best compliments from Near & Dear.
+</p>
+
+<p class="telugu">
+బంధుమిత్రులు మరియు ఆత్మీయుల
+శుభాకాంక్షలతో.
+</p>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="card">
+
+<h2>📞 Contact the Family</h2>
+
+<p class="detail">
+For directions or any assistance,
+please call / వివరాల కోసం సంప్రదించండి:
+</p>
+
+<h3>9121363003</h3>
+
+<a href="tel:+919121363003">
+<button>📞 Call Family</button>
+</a>
+
+</div>
+
+
+<!-- FINAL INVITATION -->
+
+<div class="card">
+
+<div class="heart">❤️</div>
+
+<h2>Sai Teja Weds Akhila</h2>
+
+<p>
+We request your gracious presence
+and blessings on this beautiful occasion.
+We look forward to celebrating with you!
+</p>
+
+<div class="telugu">
+
+<p>
+మీ అమూల్యమైన రాకతో మా ఆనందాన్ని
+రెట్టింపు చేసి వధూవరులను
+ఆశీర్వదించవలసిందిగా కోరుకుంటున్నాము.
+</p>
+
+<h3>మీ రాక కోసం ఆతృతగా ఎదురుచూస్తున్నాము ❤️</h3>
+
+</div>
+
+<div class="divider">❀ ❀ ❀</div>
+
+<p class="parents">
+With Love & Best Wishes<br>
+Near & Dear
+</p>
+
+</div>
+
+
+<!-- ACTION BUTTONS -->
+
+<div class="action-buttons">
+
+<button onclick="saveDates()">
+📅 Save Wedding & Reception Dates
+</button>
+
+<button onclick="shareInvitation()">
+💌 Share Invitation
+</button>
+
+<button onclick="window.print()">
+🖨️ Print Invitation
+</button>
+
+</div>
+
+<div class="footer">
+
+<div class="heart">❤️</div>
+
+<h3>Sai Teja Weds Akhila</h3>
+
+<p>
+26 November 2026 | 29 November 2026
+</p>
+
+<p>
+Made with ❤️ for a lifetime of togetherness.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+
+<script>
+
+// WEDDING AND RECEPTION COUNTDOWN
+
+const weddingDate =
+new Date("2026-11-26T09:15:00+05:30").getTime();
+
+const receptionDate =
+new Date("2026-11-29T18:00:00+05:30").getTime();
+
+function updateCountdown(id,target,label) {
+
+  const element = document.getElementById(id);
+  const difference = target - Date.now();
+
+  if(difference <= 0) {
+    element.textContent =
+      "🎉 " + label + " Celebrated! ❤️";
+    return;
+  }
+
+  const days = Math.floor(difference / 86400000);
+
+  const hours = Math.floor((difference / 3600000) % 24);
+
+  const minutes = Math.floor((difference / 60000) % 60);
+
+  const seconds = Math.floor((difference / 1000) % 60);
+
+  element.textContent =
+    days + " Days " +
+    hours + " Hrs " +
+    minutes + " Min " +
+    seconds + " Sec";
+}
+
+function refreshCountdown() {
+
+  updateCountdown(
+    "wedding-countdown",
+    weddingDate,
+    "Wedding"
+  );
+
+  updateCountdown(
+    "reception-countdown",
+    receptionDate,
+    "Reception"
+  );
+}
+
+refreshCountdown();
+setInterval(refreshCountdown,1000);
+
+
+// AUTOMATIC PHOTO SLIDESHOW
+
+const slides = Array.from(
+  document.querySelectorAll(".slide")
+);
+
+const captions = [
+  "Lord Ganesha's Blessings",
+  "A Beautiful Wedding Celebration",
+  "Traditional Indian Wedding",
+  "A Lovely Bride and Groom"
+];
+
+let slideIndex = 0;
+
+const dotsContainer =
+document.getElementById("slideDots");
+
+slides.forEach((slide,index) => {
+
+  const dot = document.createElement("span");
+
+  dot.className =
+    "dot" + (index === 0 ? " active" : "");
+
+  dotsContainer.appendChild(dot);
+
+});
+
+function showSlides() {
+
+  slides[slideIndex].classList.remove("active");
+
+  dotsContainer.children[slideIndex]
+    .classList.remove("active");
+
+  slideIndex = (slideIndex + 1) % slides.length;
+
+  slides[slideIndex].classList.add("active");
+
+  dotsContainer.children[slideIndex]
+    .classList.add("active");
+
+  document.getElementById("slideCaption")
+    .textContent = captions[slideIndex];
+
+}
+
+setInterval(showSlides,4000);
+
+
+// SAVE BOTH EVENTS TO CALENDAR
+
+function saveDates() {
+
+  const calendar = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sai Teja and Akhila Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:saiteja-akhila-wedding-20261126@example.com
+DTSTAMP:20261118T000000Z
+SUMMARY:Sai Teja Weds Akhila - Wedding
+DTSTART:20261126T034500Z
+DTEND:20261126T063000Z
+LOCATION:Premasri Convention, Thukkuguda, Hyderabad
+DESCRIPTION:Wedding ceremony of Sai Teja Mudhiraj and Akhila.
+END:VEVENT
+BEGIN:VEVENT
+UID:saiteja-akhila-reception-20261129@example.com
+DTSTAMP:20261118T000000Z
+SUMMARY:Sai Teja Weds Akhila - Reception
+DTSTART:20261129T123000Z
+DTEND:20261129T163000Z
+LOCATION:Dharmaram X Road, Kannala, Palakurthi, Peddapalli, Telangana
+DESCRIPTION:Reception celebration of Sai Teja Mudhiraj and Akhila.
+END:VEVENT
+END:VCALENDAR`;
+
+  const blob = new Blob(
+    [calendar],
+    {type:"text/calendar;charset=utf-8"}
+  );
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+
+  link.href = url;
+
+  link.download =
+    "Sai_Teja_Akhila_Wedding_Reception.ics";
+
+  document.body.appendChild(link);
+
+  link.click();
+
+  link.remove();
+
+  setTimeout(() => {
+    URL.revokeObjectURL(url);
+  },3000);
+
+}
+
+
+// SHARE INVITATION
+
+async function shareInvitation() {
+
+  const pageUrl = window.location.href;
+
+  const message =
+`💍 WEDDING INVITATION ❤️
+
+Sai Teja Mudhiraj ❤️ Akhila
+
+💍 WEDDING
+Date: 26 November 2026
+Time: 09:15 AM
+Venue: Premasri Convention, Thukkuguda, Hyderabad.
+
+🎉 RECEPTION
+Date: 29 November 2026
+Time: 06:00 PM onwards
+Venue: Dharmaram 'X' Road, Kannala, Palakurthi, Peddapalli, Telangana.
+
+📍 Reception Directions:
+https://www.google.com/maps/dir/?api=1&destination=18.685447831637337%2C79.41040372856125
+
+📞 Contact: 9121363003
+
+Please join us and bless the couple! ❤️
+
+${pageUrl.startsWith("http") ? "View Invitation: " + pageUrl : ""}`;
+
+  if(navigator.share) {
+
+    try {
+
+      await navigator.share({
+        title:"Sai Teja Weds Akhila",
+        text:message,
+        url:pageUrl.startsWith("http") ? pageUrl : undefined
+      });
+
+    } catch(error) {
+
+      if(error.name !== "AbortError") {
+        alert("Unable to share. Please try again.");
+      }
+
+    }
+
+  } else {
+
+    try {
+
+      await navigator.clipboard.writeText(message);
+
+      alert("Invitation copied! You can share it now.");
+
+    } catch(error) {
+
+      alert(message);
+
+    }
+
+  }
+
+}
+
+
+// FALLING FLOWER PETALS
+
+const petalColors = [
+  "#ff80ab",
+  "#f48fb1",
+  "#ffb6c1",
+  "#f8bbd0"
+];
+
+for(let i=0;i<18;i++) {
+
+  const petal = document.createElement("div");
+
+  petal.className = "petal";
+
+  petal.style.left =
+    Math.random()*100+"vw";
+
+  petal.style.animationDuration =
+    (7+Math.random()*8)+"s";
+
+  petal.style.animationDelay =
+    Math.random()*8+"s";
+
+  petal.style.background =
+    `radial-gradient(circle,${
+      petalColors[
+        Math.floor(Math.random()*petalColors.length)
+      ]
+    } 35%,transparent 75%)`;
+
+  document.body.appendChild(petal);
+
+}
+
+
+// FLOATING HEARTS
+
+setInterval(() => {
+
+  const heart = document.createElement("div");
+
+  heart.className = "floating-heart";
+
+  heart.textContent = "💖";
+
+  heart.style.left =
+    Math.random()*100+"vw";
+
+  heart.style.animationDuration =
+    (5+Math.random()*4)+"s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  },9000);
+
+},3000);
+
+</script>
+
+</body>
+</html>
